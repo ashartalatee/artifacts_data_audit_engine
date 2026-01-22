@@ -1,0 +1,55 @@
+# PYTHON
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# OS / EDITOR NOISE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# LOGS (RUNTIME ONLY)
+logs/parsing/*.log
+logs/validation/*.log
+logs/anomaly/*.log
+logs/pipeline/*.log
+
+# allow placeholder
+!logs/**/.gitkeep
+
+# DATASETS (RAW & DIRTY)
+datasets/raw/*
+datasets/dirty/*
+datasets/archived/*
+
+# allow documentation & samples
+!datasets/raw/README.md
+!datasets/dirty/README.md
+!datasets/archived/README.md
+
+# OUTPUTS / REPORTS (TEMP)
+reports/daily/*
+reports/tmp/*
+01_parsing/outputs/*
+
+# allow example or final audited reports
+!reports/final/
+!reports/final/*.md
+!01_parsing/outputs/README.md
+
+# EXPERIMENT SCRATCH
+experiments/*.tmp
+experiments/*.bak
+
+# CHECKSUM / CACHE
+*.checksum
+*.cache
