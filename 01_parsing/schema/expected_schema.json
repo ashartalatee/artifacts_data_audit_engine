@@ -1,0 +1,25 @@
+{
+  "columns": {
+    "order_id": {
+      "type": "int",
+      "nullable": false
+    },
+    "order_date": {
+      "type": "string",
+      "nullable": false
+    },
+    "customer_id": {
+      "type": "string",
+      "nullable": false
+    },
+    "amount": {
+      "type": "float",
+      "nullable": false
+    },
+    "status": {
+      "type": "string",
+      "nullable": true
+    }
+  },
+  "strict": true
+}
